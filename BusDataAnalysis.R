@@ -241,9 +241,6 @@ PlotLineHour = function (line, dir, Ars) {
 # write.csv(file="/home/trafficdata/test/signals.csv",x)
 SQLQuery = function(user, pass, q) {
   
-  host = "db1.sis.uta.fi"
-  db = "trafficdata"
-  
   con = dbConnect(PostgreSQL(), host = host, user = user, password = pass, dbname = db)
   rs = dbSendQuery(con, q)
   
